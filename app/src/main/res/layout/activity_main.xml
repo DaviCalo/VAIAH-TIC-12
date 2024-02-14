@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/joti_one"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="#FF0000"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_purchased"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:gravity="center"
+        android:text="@string/total"
+        android:fontFamily="@font/joti_one"
+        android:textColor="#FF0000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/sub"
+                android:textColor="#FF0000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_appetizer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/joti_one"
+                android:text="@string/subtitle_appetizer"
+                android:textAllCaps="true"
+                android:textColor="@color/main"
+                android:textSize="25sp"
+                android:textStyle="normal"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/caption" />
+
+            <View
+                android:id="@+id/view_top_appetizer"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="#977033"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_appetizer" />
+
+            <CheckBox
+                android:id="@+id/check_1appetizer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:onClick="Order"
+                android:fontFamily="@font/joti_one"
+                android:text="@string/dish_appetizer1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_top_appetizer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/dish_appetizer1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_1appetizer"
+                app:layout_constraintStart_toEndOf="@id/check_1appetizer"
+                app:layout_constraintTop_toTopOf="@id/check_1appetizer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/price_appetizer1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_1appetizer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/check_1appetizer" />
+
+
+            <CheckBox
+                android:id="@+id/check_2appetizer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+
+                android:onClick="Order"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/check_1appetizer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/dish_appetizer2"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_2appetizer"
+                app:layout_constraintStart_toEndOf="@id/check_2appetizer"
+                app:layout_constraintTop_toTopOf="@id/check_2appetizer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/price_appetizer2"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_2appetizer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/check_2appetizer" />
+
+
+            <CheckBox
+                android:id="@+id/check_3appetizer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+
+                android:onClick="Order"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/check_2appetizer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/dish_appetizer3"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_3appetizer"
+                app:layout_constraintStart_toEndOf="@id/check_3appetizer"
+                app:layout_constraintTop_toTopOf="@id/check_3appetizer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/price_appetizer3"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_3appetizer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/check_3appetizer" />
+
+
+            <CheckBox
+                android:id="@+id/check_4appetizer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+
+                android:onClick="Order"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/check_3appetizer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/dish_appetizer4"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_4appetizer"
+                app:layout_constraintStart_toEndOf="@id/check_4appetizer"
+                app:layout_constraintTop_toTopOf="@id/check_4appetizer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/price_appetizer4"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_4appetizer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/check_4appetizer" />
+
+            <View
+                android:id="@+id/view_bottom_appetizer"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/secondary"
+
+                app:layout_constraintTop_toBottomOf="@id/check_4appetizer"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/text_principal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/joti_one"
+                android:text="@string/subtitle_principal"
+                android:textAllCaps="true"
+                android:textColor="@color/main"
+                android:textSize="25sp"
+
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_bottom_appetizer" />
+
+            <View
+                android:id="@+id/view_top_principal"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/secondary"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_principal" />
+
+            <CheckBox
+                android:id="@+id/check_1principal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+
+                android:onClick="Order"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_top_principal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/dish_principal1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_1principal"
+                app:layout_constraintStart_toEndOf="@id/check_1principal"
+                app:layout_constraintTop_toTopOf="@id/check_1principal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/prince_principal1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_1principal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/check_1principal" />
+
+
+            <CheckBox
+                android:id="@+id/check_2principal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+
+                android:onClick="Order"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/check_1principal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/dish_principal2"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_2principal"
+                app:layout_constraintStart_toEndOf="@id/check_2principal"
+                app:layout_constraintTop_toTopOf="@id/check_2principal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/prince_principal2"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+
+                app:layout_constraintBottom_toBottomOf="@id/check_2principal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/check_2principal" />
+
+
+            <CheckBox
+                android:id="@+id/check_3principal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+
+                android:onClick="Order"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/check_2principal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/dish_principal3"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_3principal"
+                app:layout_constraintStart_toEndOf="@id/check_3principal"
+                app:layout_constraintTop_toTopOf="@id/check_3principal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/prince_principal3"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_3principal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/check_3principal" />
+
+
+            <CheckBox
+                android:id="@+id/check_4principal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+
+                android:onClick="Order"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/check_3principal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/dish_principal4"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_4principal"
+                app:layout_constraintStart_toEndOf="@id/check_4principal"
+                app:layout_constraintTop_toTopOf="@id/check_4principal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/prince_principal4"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_4principal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/check_4principal" />
+
+            <View
+                android:id="@+id/view_bottom_principal"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/secondary"
+
+                app:layout_constraintTop_toBottomOf="@id/check_4principal"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/text_drink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/joti_one"
+                android:text="@string/subtitle_drink"
+                android:textAllCaps="true"
+                android:textColor="@color/main"
+                android:textSize="25sp"
+
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_bottom_principal" />
+
+            <View
+                android:id="@+id/view_top_drink"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/secondary"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_drink" />
+
+            <CheckBox
+                android:id="@+id/check_1drink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+
+                android:onClick="Order"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_top_drink" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/dish_drink1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_1drink"
+                app:layout_constraintStart_toEndOf="@id/check_1drink"
+                app:layout_constraintTop_toTopOf="@id/check_1drink" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/prince_drink1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_1drink"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/check_1drink" />
+
+
+            <CheckBox
+                android:id="@+id/check_2drink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+
+                android:onClick="Order"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/check_1drink" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/dish_drink2"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_2drink"
+                app:layout_constraintStart_toEndOf="@id/check_2drink"
+                app:layout_constraintTop_toTopOf="@id/check_2drink" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/prince_drink2"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_2drink"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/check_2drink" />
+
+
+            <View
+                android:id="@+id/view_bottom_drink"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/secondary"
+
+                app:layout_constraintTop_toBottomOf="@id/check_2drink"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/text_dessert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/joti_one"
+                android:text="@string/subtitle_dessert"
+                android:textAllCaps="true"
+                android:textColor="@color/main"
+                android:textSize="25sp"
+
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_bottom_drink" />
+
+            <View
+                android:id="@+id/view_top_dessert"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/secondary"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_dessert" />
+
+            <CheckBox
+                android:id="@+id/check_1dessert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+
+                android:onClick="Order"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_top_dessert" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/dish_dessert1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_1dessert"
+                app:layout_constraintStart_toEndOf="@id/check_1dessert"
+                app:layout_constraintTop_toTopOf="@id/check_1dessert" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/prince_dessert1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_1dessert"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/check_1dessert" />
+
+
+            <CheckBox
+                android:id="@+id/check_2dessert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+
+                android:onClick="Order"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/check_1dessert" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/dish_dessert2"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_2dessert"
+                app:layout_constraintStart_toEndOf="@id/check_2dessert"
+                app:layout_constraintTop_toTopOf="@id/check_2dessert" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/prince_dessert2"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_2dessert"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/check_2dessert" />
+
+
+            <CheckBox
+                android:id="@+id/check_3dessert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+
+                android:onClick="Order"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/check_2dessert" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/dish_sobremesa3"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_3dessert"
+                app:layout_constraintStart_toEndOf="@id/check_3dessert"
+                app:layout_constraintTop_toTopOf="@id/check_3dessert" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/prince_dessert3"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_3dessert"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/check_3dessert" />
+
+
+            <CheckBox
+                android:id="@+id/check_4dessert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+
+                android:onClick="Order"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/check_3dessert" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/dish_dessert4"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_4dessert"
+                app:layout_constraintStart_toEndOf="@id/check_4dessert"
+                app:layout_constraintTop_toTopOf="@id/check_4dessert" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:text="@string/price_dessert4"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
+                app:layout_constraintBottom_toBottomOf="@id/check_4dessert"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/check_4dessert" />
+
+            <View
+                android:id="@+id/view_bottom_dessert"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/secondary"
+
+                app:layout_constraintTop_toBottomOf="@id/check_4dessert"
+                tools:ignore="MissingConstraints" />
+
+
+            <EditText
+                android:id="@+id/edit_preference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/circulo_drawable"
+                android:fontFamily="@font/joti_one"
+                android:hint="@string/Info"
+                android:inputType="textImeMultiLine"
+                android:paddingStart="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_bottom_dessert"
+                tools:ignore="RtlSymmetry"
+                android:autofillHints="name" />
+
+            <Button
+                android:id="@+id/button_make_request"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/main"
+                android:fontFamily="@font/joti_one"
+                android:gravity="center"
+                android:onClick="MakeOrder"
+                android:text="@string/make"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_preference" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

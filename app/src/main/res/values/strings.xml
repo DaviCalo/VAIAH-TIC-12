@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">VAIAH</string>
+    <string name="total">R$ 0</string>
+
+    <string name="subtitle_appetizer">Entrada</string>
+    <string name="dish_appetizer1">Madioquinha - 10min</string>
+    <string name="dish_appetizer2">Carambola - 5min</string>
+    <string name="dish_appetizer3">Tábua de Queijos - 10min</string>
+    <string name="dish_appetizer4">Tapioca de carne - 7min</string>
+    <string name="price_appetizer1">R$ 10,00</string>
+    <string name="price_appetizer2">R$ 8,00</string>
+    <string name="price_appetizer3">R$ 25,00</string>
+    <string name="price_appetizer4">R$ 10,00</string>
+
+
+    <string name="subtitle_principal">Prato Principal</string>
+
+
+    <string name="subtitle_dessert">Sobremesa</string>
+
+
+    <string name="subtitle_drink">Bebida</string>
+
+    <string name="PedidoFeito">Seu pedido foi enviado para o balcão do
+restaurante</string>
+
+    <string name="sub">Cardapio online do melhor \nrestaurante nordestino</string>
+    <string name="sub2">Olá, Davi</string>
+
+    <string name="dish_principal2">Moqueca - 35min</string>
+    <string name="dish_principal1">Vatapá de Frango - 30min</string>
+    <string name="dish_principal3">Baião de Dois - 25min</string>
+    <string name="dish_principal4">Panelada - 45min</string>
+    <string name="dish_drink1">São Geraldo - 0min</string>
+    <string name="dish_drink2">Guaraná Jesus - 0min</string>
+    <string name="dish_dessert1">Bolo de Macaxeira - 10min</string>
+    <string name="dish_dessert2">Cocada Baiana - 5min</string>
+    <string name="dish_sobremesa3">Mungunzá - 25min</string>
+    <string name="dish_dessert4">Caju em Calda - 15min</string>
+    <string name="Info">Prefencêrias nos pratos</string>
+    <string name="make">Realizar Pedido</string>
+    <string name="price_dessert4">R$ 18,00</string>
+    <string name="prince_dessert3">R$ 20,00</string>
+    <string name="prince_dessert2">R$ 12,00</string>
+    <string name="prince_dessert1">R$ 8,00</string>
+    <string name="prince_drink2">R$ 2,00</string>
+    <string name="prince_drink1">R$ 9,00</string>
+    <string name="prince_principal4">R$ 30,00</string>
+    <string name="prince_principal3">R$ 15,00</string>
+    <string name="prince_principal2">R$ 21,00</string>
+    <string name="prince_principal1">R$ 27,00</string>
+
+</resources>

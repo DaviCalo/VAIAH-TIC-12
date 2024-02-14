@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/art_pop3"
+    tools:context=".TelaInicial">
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageView"-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:scaleType="fitXY"-->
+
+    <!--            android:src="@drawable/arte_pop"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    <TextView
+        android:id="@+id/text_ola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/joti_one"
+        android:text="Olá,"
+
+        android:textColor="@color/main"
+        android:textSize="50dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_legenda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/joti_one"
+        android:text="Bem vindo \n ao restaurante "
+        android:textAlignment="center"
+
+        android:textColor="@color/meio"
+        android:textSize="35dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_ola" />
+
+    <TextView
+        android:id="@+id/text_res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/joti_one"
+        android:text="VAIAH"
+        android:textAlignment="center"
+
+        android:textColor="@color/main"
+        android:textSize="35dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_legenda" />
+
+    <TextView
+        android:id="@+id/text_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/joti_one"
+        android:text="Seu nome:"
+        android:textAlignment="center"
+
+        android:textColor="@color/meio"
+        android:textSize="25dp"
+
+        app:layout_constraintBottom_toTopOf="@id/edit_name"
+        app:layout_constraintStart_toStartOf="@id/edit_name" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/circulo_drawable"
+        android:gravity="center_vertical"
+        android:textColor="#ff2800"
+        android:fontFamily="@font/joti_one"
+        android:textSize="24sp"
+        android:paddingStart="12dp"
+        android:inputType="textShortMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_res"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/text_mesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/joti_one"
+        android:text="Sua mesa:"
+        android:textAlignment="center"
+
+        android:textColor="@color/meio"
+        android:textSize="25dp"
+
+        app:layout_constraintBottom_toTopOf="@id/edit_mesa"
+        app:layout_constraintStart_toStartOf="@id/edit_mesa" />
+
+    <EditText
+        android:id="@+id/edit_mesa"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/circulo_drawable"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:fontFamily="@font/joti_one"
+        android:textColor="#ff2800"
+        android:textSize="24sp"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_name"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/main"
+        android:fontFamily="@font/joti_one"
+        android:onClick="mudartela"
+        android:text="Entrar"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_mesa" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
