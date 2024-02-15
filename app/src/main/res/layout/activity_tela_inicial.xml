@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/art_pop3"
-    tools:context=".TelaInicial">
+    tools:context=".ScreenInitial">
 
     <!--        <ImageView-->
     <!--            android:id="@+id/imageView"-->
@@ -56,9 +56,9 @@
         android:fontFamily="@font/joti_one"
         android:text="VAIAH"
         android:textAlignment="center"
-
+        android:textStyle="bold"
         android:textColor="@color/main"
-        android:textSize="35dp"
+        android:textSize="40dp"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -89,7 +89,7 @@
         android:fontFamily="@font/joti_one"
         android:textSize="24sp"
         android:paddingStart="12dp"
-        android:inputType="textShortMessage"
+        android:inputType="textCapWords"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_res"
@@ -132,7 +132,7 @@
         android:layout_marginTop="30dp"
         android:backgroundTint="@color/main"
         android:fontFamily="@font/joti_one"
-        android:onClick="mudartela"
+        android:onClick="ChangeScreen"
         android:text="Entrar"
         android:textColor="#ffffff"
         android:textSize="24sp"

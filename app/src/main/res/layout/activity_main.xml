@@ -8,9 +8,9 @@
     tools:context=".MainActivity">
 
     <View
-        android:id="@+id/view_top"
+        android:id="@+id/view_top_menu"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:background="@color/black"
@@ -21,6 +21,7 @@
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
         android:fontFamily="@font/joti_one"
         android:gravity="center"
         android:text="@string/app_name"
@@ -35,6 +36,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
         android:gravity="center"
         android:text="@string/total"
         android:fontFamily="@font/joti_one"
@@ -47,7 +49,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="60dp"
         android:fillViewport="true">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -73,7 +75,7 @@
                 android:id="@+id/text_appetizer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="15dp"
                 android:fontFamily="@font/joti_one"
                 android:text="@string/subtitle_appetizer"
                 android:textAllCaps="true"
@@ -88,7 +90,7 @@
             <View
                 android:id="@+id/view_top_appetizer"
                 android:layout_width="match_parent"
-                android:layout_height="4dp"
+                android:layout_height="5dp"
                 android:background="#977033"
 
                 app:layout_constraintEnd_toEndOf="parent"
@@ -112,19 +114,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/view_top_appetizer" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/joti_one"
-                android:gravity="center"
-                android:text="@string/dish_appetizer1"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-
-                app:layout_constraintBottom_toBottomOf="@id/check_1appetizer"
-                app:layout_constraintStart_toEndOf="@id/check_1appetizer"
-                app:layout_constraintTop_toTopOf="@id/check_1appetizer" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -148,24 +137,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
 
-
-                android:onClick="Order"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/check_1appetizer" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:fontFamily="@font/joti_one"
-                android:gravity="center"
                 android:text="@string/dish_appetizer2"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="16sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_marginStart="10dp"
+                android:onClick="Order"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/check_1appetizer" />
 
-                app:layout_constraintBottom_toBottomOf="@id/check_2appetizer"
-                app:layout_constraintStart_toEndOf="@id/check_2appetizer"
-                app:layout_constraintTop_toTopOf="@id/check_2appetizer" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -188,25 +171,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-
+                android:fontFamily="@font/joti_one"
+                android:text="@string/dish_appetizer3"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_marginStart="10dp"
 
                 android:onClick="Order"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/check_2appetizer" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/joti_one"
-                android:gravity="center"
-                android:text="@string/dish_appetizer3"
-                android:textAlignment="center"
-                android:textColor="#000000"
-                android:textSize="16sp"
-
-                app:layout_constraintBottom_toBottomOf="@id/check_3appetizer"
-                app:layout_constraintStart_toEndOf="@id/check_3appetizer"
-                app:layout_constraintTop_toTopOf="@id/check_3appetizer" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -229,25 +205,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-
-
-                android:onClick="Order"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/check_3appetizer" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:fontFamily="@font/joti_one"
-                android:gravity="center"
                 android:text="@string/dish_appetizer4"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-
-                app:layout_constraintBottom_toBottomOf="@id/check_4appetizer"
-                app:layout_constraintStart_toEndOf="@id/check_4appetizer"
-                app:layout_constraintTop_toTopOf="@id/check_4appetizer" />
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_marginStart="10dp"
+                android:onClick="Order"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/check_3appetizer" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -267,7 +235,7 @@
             <View
                 android:id="@+id/view_bottom_appetizer"
                 android:layout_width="match_parent"
-                android:layout_height="3dp"
+                android:layout_height="5dp"
                 android:layout_marginTop="5dp"
                 android:background="@color/secondary"
 
@@ -279,7 +247,7 @@
                 android:id="@+id/text_principal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="20dp"
                 android:fontFamily="@font/joti_one"
                 android:text="@string/subtitle_principal"
                 android:textAllCaps="true"
@@ -294,7 +262,7 @@
             <View
                 android:id="@+id/view_top_principal"
                 android:layout_width="match_parent"
-                android:layout_height="4dp"
+                android:layout_height="5dp"
                 android:background="@color/secondary"
 
                 app:layout_constraintEnd_toEndOf="parent"
@@ -306,25 +274,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-
-
-                android:onClick="Order"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/view_top_principal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:fontFamily="@font/joti_one"
-                android:gravity="center"
                 android:text="@string/dish_principal1"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="16sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_marginStart="10dp"
 
-                app:layout_constraintBottom_toBottomOf="@id/check_1principal"
-                app:layout_constraintStart_toEndOf="@id/check_1principal"
-                app:layout_constraintTop_toTopOf="@id/check_1principal" />
+                android:onClick="Order"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_top_principal" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -347,25 +308,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-
-
-                android:onClick="Order"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/check_1principal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:fontFamily="@font/joti_one"
-                android:gravity="center"
                 android:text="@string/dish_principal2"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="16sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_marginStart="10dp"
+                android:onClick="Order"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/check_1principal" />
 
-                app:layout_constraintBottom_toBottomOf="@id/check_2principal"
-                app:layout_constraintStart_toEndOf="@id/check_2principal"
-                app:layout_constraintTop_toTopOf="@id/check_2principal" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -389,25 +343,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
+                android:fontFamily="@font/joti_one"
+                android:text="@string/dish_principal3"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_marginStart="10dp"
 
 
                 android:onClick="Order"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/check_2principal" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/joti_one"
-                android:gravity="center"
-                android:text="@string/dish_principal3"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-
-                app:layout_constraintBottom_toBottomOf="@id/check_3principal"
-                app:layout_constraintStart_toEndOf="@id/check_3principal"
-                app:layout_constraintTop_toTopOf="@id/check_3principal" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -430,25 +379,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-
-
-                android:onClick="Order"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/check_3principal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:fontFamily="@font/joti_one"
-                android:gravity="center"
                 android:text="@string/dish_principal4"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="16sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_marginStart="10dp"
+                android:onClick="Order"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/check_3principal" />
 
-                app:layout_constraintBottom_toBottomOf="@id/check_4principal"
-                app:layout_constraintStart_toEndOf="@id/check_4principal"
-                app:layout_constraintTop_toTopOf="@id/check_4principal" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -468,7 +410,7 @@
             <View
                 android:id="@+id/view_bottom_principal"
                 android:layout_width="match_parent"
-                android:layout_height="3dp"
+                android:layout_height="5dp"
                 android:layout_marginTop="5dp"
                 android:background="@color/secondary"
 
@@ -480,7 +422,7 @@
                 android:id="@+id/text_drink"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="20dp"
                 android:fontFamily="@font/joti_one"
                 android:text="@string/subtitle_drink"
                 android:textAllCaps="true"
@@ -495,7 +437,7 @@
             <View
                 android:id="@+id/view_top_drink"
                 android:layout_width="match_parent"
-                android:layout_height="4dp"
+                android:layout_height="5dp"
                 android:background="@color/secondary"
 
                 app:layout_constraintEnd_toEndOf="parent"
@@ -507,25 +449,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-
-
-                android:onClick="Order"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/view_top_drink" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:fontFamily="@font/joti_one"
-                android:gravity="center"
                 android:text="@string/dish_drink1"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="16sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_marginStart="10dp"
+                android:onClick="Order"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_top_drink" />
 
-                app:layout_constraintBottom_toBottomOf="@id/check_1drink"
-                app:layout_constraintStart_toEndOf="@id/check_1drink"
-                app:layout_constraintTop_toTopOf="@id/check_1drink" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -548,25 +483,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-
+                android:fontFamily="@font/joti_one"
+                android:text="@string/dish_drink2"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_marginStart="10dp"
 
                 android:onClick="Order"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/check_1drink" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/joti_one"
-                android:gravity="center"
-                android:text="@string/dish_drink2"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-
-                app:layout_constraintBottom_toBottomOf="@id/check_2drink"
-                app:layout_constraintStart_toEndOf="@id/check_2drink"
-                app:layout_constraintTop_toTopOf="@id/check_2drink" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -587,7 +516,7 @@
             <View
                 android:id="@+id/view_bottom_drink"
                 android:layout_width="match_parent"
-                android:layout_height="3dp"
+                android:layout_height="5dp"
                 android:layout_marginTop="5dp"
                 android:background="@color/secondary"
 
@@ -599,7 +528,7 @@
                 android:id="@+id/text_dessert"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="20dp"
                 android:fontFamily="@font/joti_one"
                 android:text="@string/subtitle_dessert"
                 android:textAllCaps="true"
@@ -614,7 +543,7 @@
             <View
                 android:id="@+id/view_top_dessert"
                 android:layout_width="match_parent"
-                android:layout_height="4dp"
+                android:layout_height="5dp"
                 android:background="@color/secondary"
 
                 app:layout_constraintEnd_toEndOf="parent"
@@ -626,25 +555,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-
-
-                android:onClick="Order"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/view_top_dessert" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:fontFamily="@font/joti_one"
-                android:gravity="center"
                 android:text="@string/dish_dessert1"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="16sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_marginStart="10dp"
+                android:onClick="Order"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_top_dessert" />
 
-                app:layout_constraintBottom_toBottomOf="@id/check_1dessert"
-                app:layout_constraintStart_toEndOf="@id/check_1dessert"
-                app:layout_constraintTop_toTopOf="@id/check_1dessert" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -667,25 +589,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-
+                android:fontFamily="@font/joti_one"
+                android:text="@string/dish_dessert2"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_marginStart="10dp"
 
                 android:onClick="Order"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/check_1dessert" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/joti_one"
-                android:gravity="center"
-                android:text="@string/dish_dessert2"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-
-                app:layout_constraintBottom_toBottomOf="@id/check_2dessert"
-                app:layout_constraintStart_toEndOf="@id/check_2dessert"
-                app:layout_constraintTop_toTopOf="@id/check_2dessert" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -708,25 +624,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-
+                android:fontFamily="@font/joti_one"
+                android:text="@string/dish_dessert3"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_marginStart="10dp"
 
                 android:onClick="Order"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/check_2dessert" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/joti_one"
-                android:gravity="center"
-                android:text="@string/dish_sobremesa3"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="16sp"
 
-                app:layout_constraintBottom_toBottomOf="@id/check_3dessert"
-                app:layout_constraintStart_toEndOf="@id/check_3dessert"
-                app:layout_constraintTop_toTopOf="@id/check_3dessert" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -749,25 +660,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-
+                android:fontFamily="@font/joti_one"
+                android:text="@string/dish_dessert4"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_marginStart="10dp"
 
                 android:onClick="Order"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/check_3dessert" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/joti_one"
-                android:gravity="center"
-                android:text="@string/dish_dessert4"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-
-                app:layout_constraintBottom_toBottomOf="@id/check_4dessert"
-                app:layout_constraintStart_toEndOf="@id/check_4dessert"
-                app:layout_constraintTop_toTopOf="@id/check_4dessert" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -787,7 +692,7 @@
             <View
                 android:id="@+id/view_bottom_dessert"
                 android:layout_width="match_parent"
-                android:layout_height="3dp"
+                android:layout_height="5dp"
                 android:layout_marginTop="5dp"
                 android:background="@color/secondary"
 
@@ -797,7 +702,7 @@
 
             <EditText
                 android:id="@+id/edit_preference"
-                android:layout_width="match_parent"
+                android:layout_width="325dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/circulo_drawable"
@@ -816,7 +721,7 @@
 
             <Button
                 android:id="@+id/button_make_request"
-                android:layout_width="300dp"
+                android:layout_width="250dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="15dp"
                 android:backgroundTint="@color/main"
