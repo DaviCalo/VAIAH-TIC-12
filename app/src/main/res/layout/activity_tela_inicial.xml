@@ -25,25 +25,25 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:fontFamily="@font/joti_one"
-        android:text="Olá,"
+        android:text="@string/text_login_top"
 
         android:textColor="@color/main"
-        android:textSize="50dp"
+        android:textSize="50sp"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/text_legenda"
+        android:id="@+id/text_subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/joti_one"
-        android:text="Bem vindo \n ao restaurante "
+        android:text="@string/text_login_salutation"
         android:textAlignment="center"
 
-        android:textColor="@color/meio"
-        android:textSize="35dp"
+        android:textColor="@color/neutral"
+        android:textSize="35sp"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,26 +54,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/joti_one"
-        android:text="VAIAH"
+        android:text="@string/app_name"
         android:textAlignment="center"
         android:textStyle="bold"
         android:textColor="@color/main"
-        android:textSize="40dp"
+        android:textSize="40sp"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_legenda" />
+        app:layout_constraintTop_toBottomOf="@id/text_subtitle" />
 
     <TextView
         android:id="@+id/text_nome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/joti_one"
-        android:text="Seu nome:"
+        android:text="@string/text_login_name"
         android:textAlignment="center"
 
-        android:textColor="@color/meio"
-        android:textSize="25dp"
+        android:textColor="@color/neutral"
+        android:textSize="25sp"
 
         app:layout_constraintBottom_toTopOf="@id/edit_name"
         app:layout_constraintStart_toStartOf="@id/edit_name" />
@@ -83,34 +83,36 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="45dp"
+        android:autofillHints="name"
         android:background="@drawable/circulo_drawable"
-        android:gravity="center_vertical"
-        android:textColor="#ff2800"
         android:fontFamily="@font/joti_one"
-        android:textSize="24sp"
-        android:paddingStart="12dp"
+        android:gravity="center_vertical"
         android:inputType="textCapWords"
+        android:paddingStart="12dp"
+        android:textColor="#ff2800"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_res"
-        tools:ignore="RtlSymmetry" />
+
+        tools:ignore="LabelFor,RtlSymmetry" />
 
     <TextView
         android:id="@+id/text_mesa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/joti_one"
-        android:text="Sua mesa:"
+        android:text="@string/text_login_table"
         android:textAlignment="center"
 
-        android:textColor="@color/meio"
-        android:textSize="25dp"
+        android:textColor="@color/neutral"
+        android:textSize="25sp"
 
-        app:layout_constraintBottom_toTopOf="@id/edit_mesa"
-        app:layout_constraintStart_toStartOf="@id/edit_mesa" />
+        app:layout_constraintBottom_toTopOf="@id/edit_table"
+        app:layout_constraintStart_toStartOf="@id/edit_table" />
 
     <EditText
-        android:id="@+id/edit_mesa"
+        android:id="@+id/edit_table"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="45dp"
@@ -124,20 +126,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_name"
-        tools:ignore="RtlSymmetry" />
+        tools:ignore="LabelFor,RtlSymmetry"
+        android:autofillHints="no" />
 
     <Button
-        android:layout_width="300dp"
+        android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
         android:backgroundTint="@color/main"
         android:fontFamily="@font/joti_one"
         android:onClick="ChangeScreen"
-        android:text="Entrar"
+        android:text="@string/text_login_button"
         android:textColor="#ffffff"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edit_mesa" />
+        app:layout_constraintTop_toBottomOf="@id/edit_table" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
